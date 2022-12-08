@@ -1,0 +1,99 @@
+$primary: #de013f;
+$secondory: #444;
+$third: lightgrey;
+$forth: #333;
+.about {
+  background-color: $secondory;
+  display: grid;
+  grid-template-rows: 250px 1fr 1fr 1fr 50px;
+  justify-items: center;
+  -webkit-scrollbar {
+    width: 2px;
+  }
+  .imgBlock {
+    background-color: $forth;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    p {
+      color: $third;
+      text-align: center;
+      width: 60%;
+      font-size: 0.8rem;
+    }
+
+    .imgBlockLeft {
+      aspect-ratio: 1;
+      object-fit: cover;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+  }
+
+  .bundesliga,
+  .dfb,
+  .legue {
+    border-bottom: 1px solid lightgrey;
+    width: 100%;
+    padding: 0.5rem;
+
+    h3 {
+      color: $primary;
+      text-align: center;
+      font-size: 1.2rem;
+      padding: 1rem;
+    }
+    .styledName {
+      display: flex;
+      justify-content: space-between;
+      color: $third;
+      font-weight: 900;
+      text-decoration-line: underline;
+    }
+  }
+  .tableList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    li {
+      display: grid;
+      grid-template-columns: 50px 1fr 50px;
+      & > :first-child {
+        margin-left: 0.2rem;
+      }
+      & > :last-child {
+        text-align: center;
+      }
+    }
+  }
+  .dfb {
+    h4 {
+      text-align: center;
+      color: $third;
+      text-decoration: underline;
+      padding: 0.5rem;
+    }
+    .lastGame {
+      display: grid;
+      grid-template-columns: 1fr 20px;
+      color: white;
+      align-items: center;
+    }
+    img {
+      width: 20px;
+    }
+  }
+  .iconsRbl {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0.5rem;
+    a {
+      font-size: 1.4rem;
+      color: $third;
+    }
+  }
+}
