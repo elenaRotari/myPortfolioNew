@@ -1,11 +1,11 @@
-$primary: #de013f;
+$primary: rgb(239, 198, 65);
 $secondory: #444;
 $third: lightgrey;
 $forth: #333;
 .about {
   background-color: $secondory;
   display: grid;
-  grid-template-rows: 250px 1fr 1fr 1fr 50px;
+  grid-template-rows: 250px 150px 1fr 1fr 50px;
   justify-items: center;
   -webkit-scrollbar {
     width: 2px;
@@ -16,25 +16,28 @@ $forth: #333;
     display: grid;
     justify-items: center;
     align-items: center;
+    .img {
+      background-image: url(../assets/IMG_5088.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
 
+      width: 200px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+    }
     p {
-      color: $third;
+      color: $primary;
       text-align: center;
+      font-weight: 900;
       width: 60%;
       font-size: 0.8rem;
     }
-
-    .imgBlockLeft {
-      aspect-ratio: 1;
-      object-fit: cover;
-      justify-content: center;
-      margin-top: 1rem;
-    }
   }
 
-  .bundesliga,
-  .dfb,
-  .legue {
+  .contacts,
+  .language,
+  .skills {
     border-bottom: 1px solid lightgrey;
     width: 100%;
     padding: 0.5rem;
@@ -44,6 +47,7 @@ $forth: #333;
       text-align: center;
       font-size: 1.2rem;
       padding: 1rem;
+      text-decoration: underline;
     }
     .styledName {
       display: flex;
@@ -56,24 +60,25 @@ $forth: #333;
   .tableList {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    li {
+    justify-content: space-between;
+    .grid {
+      color: white;
       display: grid;
-      grid-template-columns: 50px 1fr 50px;
+      grid-template-columns: repeat(2, 1fr);
       & > :first-child {
         margin-left: 0.2rem;
       }
-      & > :last-child {
-        text-align: center;
+      .phone {
+        font-size: 0.9rem;
       }
     }
   }
-  .dfb {
-    h4 {
-      text-align: center;
-      color: $third;
-      text-decoration: underline;
-      padding: 0.5rem;
+  .language {
+    .bar {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      justify-items: center;
     }
     .lastGame {
       display: grid;
@@ -81,19 +86,17 @@ $forth: #333;
       color: white;
       align-items: center;
     }
-    img {
-      width: 20px;
-    }
   }
-  .iconsRbl {
+  .icons {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-around;
     padding: 0.5rem;
+
     a {
       font-size: 1.4rem;
-      color: $third;
+      color: $primary;
     }
   }
 }
