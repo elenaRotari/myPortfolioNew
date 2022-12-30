@@ -41,7 +41,6 @@ $forth: #333;
     border-bottom: 1px solid lightgrey;
     width: 100%;
     padding: 0.5rem;
-
     h3 {
       color: $primary;
       text-align: center;
@@ -85,6 +84,18 @@ $forth: #333;
       grid-template-columns: 1fr 20px;
       color: white;
       align-items: center;
+    }
+  }
+  .skillsBar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .textCont {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      margin-top: 0.3rem;
     }
   }
   .icons {

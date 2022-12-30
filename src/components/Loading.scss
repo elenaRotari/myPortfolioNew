@@ -1,5 +1,5 @@
 $primary: #efc641;
-$secondory: #444;
+
 $third: lightgrey;
 $forth: #333;
 .loading {
@@ -8,8 +8,11 @@ $forth: #333;
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  background-color: $secondory;
+  background-color: #202020;
   gap: 0.7rem;
+  img {
+    width: 250px;
+  }
   h1 {
     color: white;
     font-size: 2rem;

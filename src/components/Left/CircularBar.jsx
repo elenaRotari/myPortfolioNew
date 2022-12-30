@@ -13,7 +13,7 @@ export default function CircularBar({ percentage, language }) {
 
           strokeLinecap: "butt",
 
-          textSize: "16px",
+          textSize: "18px",
 
           pathTransitionDuration: 0.5,
 

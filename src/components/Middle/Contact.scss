@@ -1,0 +1,63 @@
+$primary: #efc641;
+$secondory: #444;
+$third: lightgrey;
+$forth: #333;
+.contactsCont {
+  display: grid;
+  grid-template-rows: 320px 40px 1fr;
+  .imgBlock {
+    display: flex;
+    justify-content: right;
+    padding: 1rem;
+
+    img {
+      width: 200px;
+      height: 200px;
+      margin-top: 10rem;
+    }
+  }
+  .title {
+    h2 {
+      padding: 2rem;
+      text-align: center;
+      color: $primary;
+      font-weight: 900;
+      text-decoration: underline;
+    }
+  }
+  .form {
+    .formBlock {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 3rem;
+      input,
+      textarea {
+        background-color: inherit;
+        font-size: 1.2rem;
+        padding: 0.4rem;
+        border: none;
+        border-bottom: 0.6px solid $secondory;
+        outline: none;
+        color: $third;
+      }
+      h3 {
+        color: $primary;
+        text-align: center;
+      }
+    }
+    button {
+      padding: 0.5rem 4rem;
+      width: max-content;
+      border: none;
+      background-color: $secondory;
+      color: $primary;
+      font-weight: 900;
+      align-self: center;
+      border-radius: 5px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

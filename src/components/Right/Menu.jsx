@@ -10,9 +10,15 @@ export default function Menu({ setOpen, open, page }) {
   return (
     <div className="menu">
       {open ? (
-        <RiCloseFill onClick={() => setOpen(false)} />
+        <RiCloseFill
+          onClick={() => setOpen(false)}
+          style={{ color: "white" }}
+        />
       ) : (
-        <GiHamburgerMenu onClick={() => setOpen(true)} />
+        <GiHamburgerMenu
+          onClick={() => setOpen(true)}
+          style={{ color: "white" }}
+        />
       )}
       <div className={`menuName ${open && "hidden"}`}>{page.toUpperCase()}</div>
       <ul className={`pagelist ${!open && "hidden"}`}>
@@ -24,11 +30,6 @@ export default function Menu({ setOpen, open, page }) {
         <li>
           <Link onClick={handleChangePage} to="/projects">
             Projects
-          </Link>
-        </li>
-        <li>
-          <Link onClick={handleChangePage} to="/history">
-            History
           </Link>
         </li>
         <li>

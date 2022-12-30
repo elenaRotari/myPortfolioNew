@@ -4,7 +4,6 @@ import Menu from "../Right/Menu";
 import { useState } from "react";
 import "./MiddleContainer.scss";
 import Contact from "./Contact";
-import History from "./History";
 import Home from "./Home";
 import Projects from "./Projects.jsx";
 
@@ -18,10 +17,6 @@ export default function MiddleContainer({ data, setData }) {
         <Home />
       ) : page === "projects" ? (
         <Projects />
-      ) : page === "history" ? (
-        <History />
-      ) : page === "contacts" ? (
-        <Contact />
       ) : page === "contacts" ? (
         <Contact />
       ) : (
