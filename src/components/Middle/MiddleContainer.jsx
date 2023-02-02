@@ -7,7 +7,7 @@ import Contact from "./Contact";
 import Home from "./Home";
 import Projects from "./Projects.jsx";
 
-export default function MiddleContainer({ data, setData }) {
+export default function MiddleContainer() {
   const { page } = useParams();
   const [open, setOpen] = useState(false);
   return (

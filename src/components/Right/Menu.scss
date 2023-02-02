@@ -3,18 +3,40 @@ $secondory: #444;
 $third: lightgrey;
 $forth: #333;
 .menu {
-  display: grid;
-  grid-template-rows: 80px 1fr;
-  justify-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  height: calc(100vh - 2rem);
   background-color: $secondory;
-
+  @media (max-width: 1000px) {
+    position: fixed;
+    top: 2rem;
+    background-color: transparent;
+    padding: 0.5rem;
+    font-style: italic;
+    font-weight: 300;
+    text-decoration: underline;
+  }
+  & > :first-child {
+    position: absolute;
+    top: 2rem;
+    &:hover {
+      cursor: pointer;
+    }
+    @media (max-width: 1000px) {
+      display: none;
+      right: 1rem;
+    }
+  }
   .menuName {
     transform: rotateZ(90deg);
     width: 100%;
     color: $primary;
+    @media (max-width: 1000px) {
+      display: none;
+    }
   }
 
   .pagelist {
@@ -33,5 +55,10 @@ $forth: #333;
 
   .hidden {
     display: none;
+    @media (max-width: 1000px) {
+      display: block;
+      transform: translateY(2rem);
+      font-size: 1rem;
+    }
   }
 }

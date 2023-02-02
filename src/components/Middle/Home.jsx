@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 export default function Home() {
   const navigator = useNavigate();
   return (
-    <div className="home">
+    <div className="home" id="home">
       <div className="homeContainer">
         <img src={img} alt="logo" />
       </div>

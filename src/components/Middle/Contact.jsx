@@ -16,7 +16,7 @@ export default function Contact() {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://82.165.121.189:4000/message", {
+    fetch("/message", {
       method: "POST",
       body: JSON.stringify(data),
       headers: {
@@ -33,7 +33,7 @@ export default function Contact() {
     }, 2000);
   };
   return (
-    <div className="contactsCont">
+    <div className="contactsCont" id="contact">
       <div className="imgBlock">
         <img src={img} alt="logo" />
       </div>
