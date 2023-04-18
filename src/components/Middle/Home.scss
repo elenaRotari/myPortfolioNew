@@ -4,30 +4,41 @@ $third: lightgrey;
 $forth: #333;
 .home {
   display: grid;
-  grid-template-rows: 320px 40px 1fr;
+  grid-template-rows: 320px 60px 1fr 40px;
+  @media (max-width: 730px) {
+    grid-template-rows: 40px 1fr;
+    margin-top: 1rem;
+  }
   .homeContainer {
     display: flex;
     justify-content: right;
     padding: 1rem;
-
+    position: relative;
     img {
-      width: 200px;
-      height: 200px;
-      margin-top: 10rem;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      bottom: 0;
     }
   }
   .title {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     h2 {
-      padding-top: 2rem;
       text-align: center;
+
       color: $primary;
       font-weight: 900;
       text-decoration: underline;
     }
   }
   .services {
-    height: calc(100vh - 420px);
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow-y: scroll;
     &::-webkit-scrollbar {
       display: none;
@@ -36,8 +47,17 @@ $forth: #333;
     .homeBlock {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      padding: 3rem 3rem 0 3rem;
+      padding: 0rem 3rem 0 3rem;
       gap: 3rem;
+
+      @media (max-width: 1450px) {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0rem 1.5rem 0 1.5rem;
+      }
+      @media (max-width: 1080px) {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0rem 1rem 0 1rem;
+      }
     }
 
     .cards {
@@ -57,7 +77,7 @@ $forth: #333;
         padding: 0.5rem;
       }
       p {
-        color: white;
+        color: $third;
       }
       h5 {
         color: $primary;

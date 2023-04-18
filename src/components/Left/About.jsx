@@ -7,6 +7,7 @@ import { BsFacebook } from "react-icons/bs";
 import { ImXing } from "react-icons/im";
 import SkillsBar from "./SkillsBar.jsx";
 import data from "../../data/data.json";
+import cv from "../assets/Lebenslauf_ElenaRotari.pdf";
 
 export default function About() {
   return (
@@ -19,16 +20,28 @@ export default function About() {
         <h3>{data.superContacts}</h3>
         <div className="tableList">
           <div className="grid">
-            <p>Residence</p>
-            <p>Germany</p>
+            <p>{data.contacts1[0]}</p>
+            <p>{data.contacts1[3]}</p>
           </div>
           <div className="grid">
-            <p>City</p>
-            <p>Berlin</p>
+            <p>{data.contacts1[1]}</p>
+            <p>{data.contacts1[4]}</p>
           </div>
           <div className="grid">
-            <p>Phone</p>
-            <p className="phone">+49(0)151 14796431</p>
+            <p>{data.contacts1[2]}</p>
+            <p className="phone">{data.contacts1[5]}</p>
+          </div>
+          <div className="grid">
+            <p>{data.contacts1[6]}</p>
+            <p>
+              <a
+                href={cv}
+                target="_blank"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                {data.contacts1[7]}
+              </a>
+            </p>
           </div>
         </div>
       </div>

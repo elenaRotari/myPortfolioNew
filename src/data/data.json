@@ -6,7 +6,9 @@
     "Phone",
     "Germany",
     "Berlin",
-    "+49(0)151 14796431"
+    "+49(0)151 14796431",
+    "CV",
+    "download"
   ],
   "superSkills": "Skills",
   "skillsData": [
@@ -56,6 +58,39 @@
       "described": "I use Node.js to create traditional websites, back-end API services, and data-intensive real-time applications that run across distributed devices.",
       "src": "",
       "titel": "NodeJS"
+    }
+  ],
+  "superProjects": "My Projects",
+  "projects": [
+    {
+      "described": "When I entered this world of programming, the first thing I learned was HTML and CSS. Here I attach my first portfolio, created only in HTML and CSS/SASS",
+      "src": "https://final-project-uib.vercel.app/",
+      "titel": "My first Portfolio"
+    },
+    {
+      "described": "This project was one more step towards React concepts and how we implement interactivity and dynamics in an app. It was a challenge at the time 🙂 ",
+      "src": "https://22-10-27-calculator-elena-rotari-elenarotari.vercel.app/",
+      "titel": "Calculator"
+    },
+    {
+      "described": "This is the first chapter in a step-by-step about main React concepts. At the time I thought it was phenomenal. 😄",
+      "src": "https://22-10-20-chronometer-elena-rotari.vercel.app/",
+      "titel": "Chronometer"
+    },
+    {
+      "described": "A new challenge at the end of React was to implement/clone an application that would offer more interactivity.It was as interesting as it was learnable and practical.",
+      "src": "https://hackerteam.vercel.app/",
+      "titel": "Clone of React"
+    },
+    {
+      "described": "Stack: React-Vite, Auth0, Firebase, SWR, Stripe, SendGrid, Figma→ SASS, Express, MongoDB, Monggose. Features: Real-Live Chat, Admins Dashboard, Online Payment etc..",
+      "src": "https://event.ella-rotari.com/",
+      "titel": "Final Project"
+    },
+    {
+      "described": "Comming soon..",
+      "src": "",
+      "titel": "Comming soon.."
     }
   ]
 }

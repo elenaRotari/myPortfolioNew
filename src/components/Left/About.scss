@@ -5,10 +5,17 @@ $forth: #333;
 .about {
   background-color: $secondory;
   display: grid;
-  grid-template-rows: 250px 150px 1fr 1fr 50px;
-  justify-items: center;
-  -webkit-scrollbar {
-    width: 2px;
+  grid-template-rows: 250px 10rem 1fr 1fr 50px;
+  min-height: calc(100vh - 2rem);
+  @media (max-width: 730px) {
+    min-height: 100vh;
+    grid-template-rows: 250px 10rem 1fr 1fr 80px;
+    & > :last-child {
+      margin-top: 3rem;
+    }
+    & > :nth-child(4) {
+      border-bottom: none;
+    }
   }
   .imgBlock {
     background-color: $forth;
@@ -22,9 +29,12 @@ $forth: #333;
       background-size: cover;
       background-position: center;
 
-      width: 200px;
+      width: 180px;
       aspect-ratio: 1;
       border-radius: 50%;
+      @media (max-width: 700px) {
+        width: 160px;
+      }
     }
     p {
       color: $primary;
@@ -38,15 +48,25 @@ $forth: #333;
   .contacts,
   .language,
   .skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     border-bottom: 1px solid lightgrey;
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.6rem;
+    @media (max-width: 730px) {
+      padding: 0.2rem;
+    }
+
     h3 {
       color: $primary;
       text-align: center;
       font-size: 1.2rem;
-      padding: 1rem;
+      padding: 0.6rem;
       text-decoration: underline;
+      @media (max-width: 730px) {
+        padding: 0.2rem;
+      }
     }
     .styledName {
       display: flex;
@@ -54,6 +74,11 @@ $forth: #333;
       color: $third;
       font-weight: 900;
       text-decoration-line: underline;
+    }
+  }
+  .skills {
+    @media (max-width: 730px) {
+      border: none;
     }
   }
   .tableList {
