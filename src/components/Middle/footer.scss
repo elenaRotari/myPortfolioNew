@@ -3,8 +3,9 @@ $secondory: #444;
 $third: lightgrey;
 $forth: #333;
 .footer {
-  position: sticky;
-  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   p {
     color: #555;
     text-align: center;

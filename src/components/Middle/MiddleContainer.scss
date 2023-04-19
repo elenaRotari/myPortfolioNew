@@ -1,6 +1,6 @@
 .middleContainer {
   display: grid;
-  grid-template-columns: 300px 1fr 80px;
+  grid-template-columns: 20rem 1fr 5rem;
   grid-template-rows: 1fr;
   margin: 0 auto;
   padding-top: 2rem;
@@ -38,7 +38,7 @@
     }
   }
   &.open {
-    grid-template-columns: 19rem 1fr 10rem;
+    grid-template-columns: 20rem 1fr 10rem;
     & > :nth-child(2) {
       z-index: -1;
       transform: translateX(-60px);
