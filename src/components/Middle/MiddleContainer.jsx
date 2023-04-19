@@ -19,8 +19,6 @@ export default function MiddleContainer() {
         <Projects />
       ) : page === "contacts" ? (
         <Contact />
-      ) : page === "about" ? (
-        <AboutMe />
       ) : (
         <Page404 />
       )}

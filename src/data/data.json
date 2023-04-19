@@ -83,14 +83,14 @@
       "titel": "Clone of React"
     },
     {
-      "described": "Stack: React-Vite, Auth0, Firebase, SWR, Stripe, SendGrid, Figma→ SASS, Express, MongoDB, Monggose. Features: Real-Live Chat, Admins Dashboard, Online Payment etc..",
-      "src": "https://event.ella-rotari.com/",
-      "titel": "Final Project"
-    },
-    {
       "described": "Comming soon..",
       "src": "",
       "titel": "Comming soon.."
+    },
+    {
+      "described": "Stack: React(Vite), Auth0, Firebase, SendGrid, SWR, Stripe, Express,MongoDB, Mongoose. Feature: Real-Live Chat, Admins Dashboard to control the Data, Auth0, Online payment, etc.  ",
+      "src": "https://event.ella-rotari.com/",
+      "titel": "My Final Project"
     }
   ]
 }

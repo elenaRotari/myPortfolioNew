@@ -3,6 +3,8 @@ $secondory: #444;
 $third: lightgrey;
 $forth: #333;
 .footer {
+  position: fixed;
+  bottom: 0;
   p {
     color: #555;
     text-align: center;

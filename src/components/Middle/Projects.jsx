@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Footer from "./Footer.jsx";
 
 export default function Home() {
-  // const navigator = useNavigate();
+  const navigator = useNavigate();
 
   return (
     <div className="home" id="projects">

@@ -4,7 +4,7 @@ $third: lightgrey;
 $forth: #333;
 .home {
   display: grid;
-  grid-template-rows: 320px 60px 1fr 40px;
+  grid-template-rows: 320px 40px 57vh;
   @media (max-width: 730px) {
     grid-template-rows: 40px 1fr;
     margin-top: 1rem;
@@ -23,9 +23,6 @@ $forth: #333;
   }
   .title {
     padding: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     h2 {
       text-align: center;
@@ -45,6 +42,7 @@ $forth: #333;
     }
 
     .homeBlock {
+      margin: 1rem;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       padding: 0rem 3rem 0 3rem;
@@ -52,11 +50,9 @@ $forth: #333;
 
       @media (max-width: 1450px) {
         grid-template-columns: repeat(2, 1fr);
-        padding: 0rem 1.5rem 0 1.5rem;
       }
       @media (max-width: 1080px) {
         grid-template-columns: repeat(1, 1fr);
-        padding: 0rem 1rem 0 1rem;
       }
     }
 

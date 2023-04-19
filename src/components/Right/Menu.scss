@@ -10,17 +10,14 @@ $forth: #333;
   align-items: center;
   font-size: 1.5rem;
   background-color: $secondory;
-
   @media (max-width: 1000px) {
     position: fixed;
     top: 2rem;
-    background-color: $secondory;
+    background-color: transparent;
     padding: 0.5rem;
     font-style: italic;
     font-weight: 300;
-    position: absolute;
-    height: 20%;
-    width: 20%;
+    text-decoration: underline;
   }
   & > :first-child {
     position: absolute;
