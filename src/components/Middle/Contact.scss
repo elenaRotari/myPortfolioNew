@@ -13,12 +13,12 @@ $forth: #333;
   .imgBlock {
     display: flex;
     justify-content: right;
-    padding: 1rem;
+    align-items: flex-start;
 
     img {
-      width: 200px;
-      height: 200px;
-      margin-top: 10rem;
+      width: 330px;
+      height: 330px;
+      margin-top: 4rem;
     }
   }
   .title {

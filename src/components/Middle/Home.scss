@@ -4,7 +4,7 @@ $third: lightgrey;
 $forth: #333;
 .home {
   display: grid;
-  grid-template-rows: 320px 40px 57vh;
+  grid-template-rows: 20rem 40px 1fr 50px;
   @media (max-width: 730px) {
     grid-template-rows: 40px 1fr;
     margin-top: 1rem;
@@ -15,10 +15,9 @@ $forth: #333;
     padding: 1rem;
     position: relative;
     img {
-      width: 150px;
-      height: 150px;
-      position: absolute;
-      bottom: 0;
+      width: 330px;
+      height: 330px;
+      margin-top: 4rem;
     }
   }
   .title {
