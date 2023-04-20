@@ -5,7 +5,7 @@ $forth: #333;
 .about {
   background-color: $secondory;
   display: grid;
-  grid-template-rows: 250px 10rem 1fr 1fr 50px;
+  grid-template-rows: 15.625rem 9rem 1fr 1fr 50px;
   min-height: calc(100vh - 2rem);
   @media (max-width: 730px) {
     min-height: 100vh;
